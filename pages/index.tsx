@@ -102,7 +102,10 @@ function interpretPlate(input: string): string {
   return result.join("\n");
 }
 
-export default function UniversappMeme(): JSX.Element {
+import React from "react";
+
+export default function UniversappMeme(): React.ReactElement {
+
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
   const [isDark, setIsDark] = useState(false);
