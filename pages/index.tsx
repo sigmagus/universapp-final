@@ -102,10 +102,7 @@ function interpretPlate(input: string): string {
   return result.join("\n");
 }
 
-import React from "react";
-
-export default function UniversappMeme(): React.ReactElement {
-
+export default function UniversappMeme() {
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
   const [isDark, setIsDark] = useState(false);
@@ -130,8 +127,8 @@ export default function UniversappMeme(): React.ReactElement {
         Universapp: Señales, placas y otras tonterías sagradas ✨
       </h1>
 
-      <Card className="max-w-lg mx-auto bg-white/80 dark:bg-gray-800 border shadow-xl">
-        <CardContent className="p-6 space-y-4">
+      <div className="max-w-lg mx-auto bg-white/80 dark:bg-gray-800 border shadow-xl rounded-xl">
+        <div className="p-6 space-y-4">
           <p className="text-sm">
             Escribe una placa, número angelical o lo que viste en el camino:
           </p>
@@ -149,8 +146,8 @@ export default function UniversappMeme(): React.ReactElement {
               {message}
             </pre>
           )}
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 }
